@@ -1,0 +1,65 @@
+{
+  "products": [
+    {
+      "name": "BEARO",
+      "status": "Active",
+      "type": "Product",
+      "description": "Payments app for seamless crypto transactions",
+      "github_repo": "https://github.com/bearifiedco/bearo",
+      "linear_team": "https://linear.app/bearifiedco/team/BEARO",
+      "slack_channel": "https://bearifiedco.slack.com/archives/C1234567890",
+      "figma_design": "",
+      "production_url": "https://bearo.app"
+    }
+  ],
+  "projects": [
+    {
+      "name": "BEARO Mobile App v1.0",
+      "product": "BEARO",
+      "status": "In Progress",
+      "priority": "P1-High",
+      "quarter": "Q1 2025",
+      "target_date": "2025-03-31",
+      "completion_percent": 45,
+      "description": "Initial release of BEARO mobile application for iOS and Android"
+    }
+  ],
+  "tasks": [
+    {
+      "name": "Design mobile app wireframes",
+      "project": "BEARO Mobile App v1.0",
+      "status": "In Progress",
+      "priority": "P1-High",
+      "due_date": "2025-02-15",
+      "estimated_hours": 16,
+      "tags": ["design", "frontend"],
+      "description": "Create wireframes for all main screens of the mobile app"
+    },
+    {
+      "name": "Implement payment flow API",
+      "project": "BEARO Mobile App v1.0",
+      "status": "Todo",
+      "priority": "P0-Critical",
+      "due_date": "2025-02-28",
+      "estimated_hours": 40,
+      "tags": ["backend", "feature"],
+      "description": "Build the core payment processing API endpoints"
+    }
+  ],
+  "team_members": [
+    {
+      "name": "Alex Alaniz",
+      "email": "alex@bearifiedco.com",
+      "role": "Founder/CEO",
+      "status": "Active",
+      "products": ["BEARO", "AlphaBuilder", "Primape", "Chimpanion"],
+      "skills": ["Product", "Strategy", "Leadership"],
+      "linear_access": true,
+      "compensation": "Equity",
+      "start_date": "2024-01-01",
+      "notes": "Founder and CEO of BearifiedCo"
+    }
+  ],
+  "crm_entries": [],
+  "content_items": []
+}
