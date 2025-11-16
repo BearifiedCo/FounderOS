@@ -76,6 +76,14 @@ Each Product Hub contains 5 linked database views:
 
 ## 📝 Implementation Notes
 
+### Notion API Limitation
+**Important**: The Notion MCP API encountered limitations when attempting to programmatically update Product Hub pages with filtered database views. The API calls for `notion-update-page` with `replace_content` command encountered parameter validation errors.
+
+**Workaround**: 
+- All Product Hub structures, content, and filter configurations are fully documented
+- Templates are provided for manual implementation
+- Filter configurations can be applied directly in Notion UI following the documented specifications
+
 ### Database URLs
 - **Projects**: https://www.notion.so/b6436b6fa21b4b8ea7978c8af805881b
 - **Tasks**: https://www.notion.so/15d0e156c8814c128d9bb2c8371d5acc
