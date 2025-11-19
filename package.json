@@ -1,0 +1,16 @@
+{
+  "name": "founderos-filter-automation",
+  "version": "1.0.0",
+  "description": "Automation scripts for FounderOS Notion filter configuration",
+  "main": "scripts/apply-notion-filters.js",
+  "scripts": {
+    "apply-filters": "node scripts/apply-notion-filters.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
