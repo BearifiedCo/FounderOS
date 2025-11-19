@@ -175,3 +175,4 @@ node scripts/linear-to-notion-sync.js your_linear_api_key
 **Next Action:** Batch sync issues to Notion using Notion MCP API  
 **Ready for:** Automated sync implementation
 
+
