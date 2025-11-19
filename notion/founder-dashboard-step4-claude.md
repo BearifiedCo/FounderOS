@@ -114,10 +114,12 @@ Successfully embedded a summary dashboard with 6 mini-views:
 - **Cannot set view types** (Board, Timeline, Calendar) programmatically
 - All view configurations are documented as instructions for manual setup
 
-### 2. Linear Integration Gap
-- Linear API integration not yet implemented (identified in Step 3)
-- Using "Linear Issue ID" text field in Tasks database as placeholder
-- Full bidirectional sync requires separate Linear MCP integration
+### 2. Linear Integration Enhancement
+- Created dedicated Linear Issues database for manual sync
+- Database URL: https://www.notion.so/a256468f56d145f0a17d4ed8628daeaa
+- Added 5 sample Linear issues to demonstrate functionality
+- Full bidirectional sync pending OAuth authentication setup
+- Manual sync workflow documented for interim use
 
 ### 3. GitHub Integration
 - No native GitHub integration in Notion API
