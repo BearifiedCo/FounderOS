@@ -1,0 +1,29 @@
+name: Daily Automation Loop
+description: Orchestrates the synchronization between Notion, Linear, and GitHub, and manages agent task assignments.
+
+schedule:
+  cron: "0 9 * * *" # Runs at 9:00 AM UTC daily
+  timezone: "UTC"
+
+jobs:
+  - name: Sync Loop
+    steps:
+      - name: Notion ↔ Linear Sync
+        command: node automation/notion-to-linear.js && node automation/linear-to-notion.js
+        timeout: 10m
+      
+      - name: PR Sync
+        command: node automation/pr-sync.js
+        timeout: 5m
+
+      - name: Task Assignment
+        command: node automation/task-manager.js
+        description: Distributes unassigned tasks to agents
+        timeout: 5m
+
+environment:
+  - NOTION_API_KEY
+  - NOTION_TASK_DB_ID
+  - LINEAR_API_KEY
+  - GITHUB_TOKEN
+

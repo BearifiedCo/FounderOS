@@ -1,0 +1,21 @@
+{
+  "name": "founderos-automation",
+  "version": "1.0.0",
+  "description": "FounderOS Automation Loop",
+  "main": "index.js",
+  "scripts": {
+    "sync:notion-linear": "node automation/notion-to-linear.js",
+    "sync:linear-notion": "node automation/linear-to-notion.js",
+    "sync:pr": "node automation/pr-sync.js",
+    "manage:tasks": "node automation/task-manager.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@linear/sdk": "^31.0.0",
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.4.5",
+    "octokit": "^3.2.1",
+    "yaml": "^2.4.1"
+  }
+}
+
