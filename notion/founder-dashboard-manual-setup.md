@@ -153,12 +153,21 @@ For each mini-view:
 
 ### Linear Integration
 
-1. Set up Linear API connection
-2. Create synced database for Linear issues
-3. Configure views:
-   - Full Active Issue List
-   - Engineering Board
-   - Past-Due Queue
+**Status:** ✅ Linear Issues database already exists
+
+1. **Add Linked Database View to Founder Dashboard:**
+   - Type `/linked` in Founder Dashboard page
+   - Select "📋 Linear Issues (Manual Sync)" database
+   - Database URL: https://www.notion.so/a256468f56d145f0a17d4ed8628daeaa
+
+2. **Configure Views:**
+   - **Full Active Issue List:** Filter: State != Done
+   - **Engineering Board:** View Type: Board, Group by: State
+   - **Past-Due Queue:** Filter: Due Date < today
+
+3. **Future Automation:**
+   - Linear API key available for automated sync
+   - Can implement bidirectional sync later
 
 ### GitHub Integration
 

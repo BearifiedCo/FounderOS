@@ -54,13 +54,20 @@ Created the full **🧠 Founder Dashboard** page in Notion with 8 major sections
 **Note:** Rollup field for task count needs to be configured.
 
 #### 5. Linear Issue Feed (Live Sync)
-- **Status:** ⚠️ Requires Linear integration setup
-- **Planned Views:**
-  - Full Active Issue List (State != Done)
-  - Engineering Board (Group by State)
-  - Past-Due Queue (Due Date < today)
+- **Database:** 📋 Linear Issues (Manual Sync)
+- **Database URL:** https://www.notion.so/a256468f56d145f0a17d4ed8628daeaa
+- **Status:** ✅ Database exists — Ready for views
+- **Required Views:**
+  - **Full Active Issue List:** Filter: State != Done
+  - **Engineering Board:** View Type: Board, Group by: State
+  - **Past-Due Queue:** Filter: Due Date < today
 
-**Integration Required:** See `notion/linear-integration-gap.md` for details.
+**Manual Setup:** 
+- Add linked database view → Select "📋 Linear Issues (Manual Sync)"
+- Configure views as specified above
+- Note: Database currently uses manual sync — automated sync can be added later
+
+**Linear API Key Available:** ✅ Ready for automated sync implementation
 
 #### 6. CRM Pipeline
 - **Database:** CRM
@@ -170,9 +177,11 @@ Added **🚀 Executive Summary Dashboard** section to the Command Center page wi
 
 ### Integration Setup
 1. **Linear Integration:**
-   - Set up Linear API connection
-   - Create synced database for Linear issues
-   - Configure views as specified
+   - ✅ Linear Issues database already exists in Notion
+   - ✅ Linear API key available for automated sync
+   - Add linked database views to Founder Dashboard
+   - Configure views as specified (Full Active List, Engineering Board, Past-Due Queue)
+   - Future: Implement automated sync using Linear API key
 
 2. **GitHub Integration:**
    - Set up GitHub API connection
